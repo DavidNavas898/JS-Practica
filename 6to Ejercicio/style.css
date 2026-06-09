@@ -78,3 +78,7 @@ h1{
     box-shadow: 4px 4px rgb(109, 16, 16);
 }
 
+h3:hover{
+    color: rgb(109, 16, 16);
+}
+

@@ -138,6 +138,11 @@ body{
      animation: FlotadorCohete 3s ease infinite;
 }
 
+.tarjetas:hover{
+    transform: scale(1.040);
+    transition: all 0.3s ease-in;
+}
+
 @keyframes Flotador {
     0% {
         
