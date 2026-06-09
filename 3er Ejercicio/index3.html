@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Formulario</h1>
+        <form action="" id="formulario">
+            <label for="nombre-formulario" >
+                Nombre:
+                <input type="text" placeholder="Ingresa tu nombre" required id="nombre-formulario">
+            </label>
+            <p id="error-nombre"></p>
+            <label for="correo-formulario" >
+                Correo:
+                <input type="email"  placeholder="Ingresa tu correo" required id="correo-formulario">
+            </label>
+            <p id="error-correo"></p>
+            <label for="telefono-formulario" >
+                Telefono:
+                <input type="tel"  placeholder="Ingresa tu telefono" required id="telefono-formulario">
+            </label>
+            <p id="error-telefono"></p>
+            <div class="boton-final">
+                <button id="boton-enviar">Enviar formulario</button>
+                <p id="enviado"></p>
+            </div>
+        </form>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>

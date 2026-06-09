@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+.card {
+  background-color: #103275;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 70vw;
+  animation: Flotador 3s ease infinite;
+}
+
+.card h1 {
+  color: white;
+  font-size: 2rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.campo label {
+  color: rgba(219, 219, 219, 0.7);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.campo input {
+  height: 52px;
+  border-radius: 0.75rem;
+  border: 2px solid transparent;
+  padding: 0 1rem;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.campo input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.campo input:focus {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+#lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#lista li {
+  background: rgba(55, 148, 202, 0.548);
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+#lista li.oculto {
+  display: none;
+}
+
+@keyframes Flotador {
+    0% {
+        
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        
+        transform: scale(1.025);
+        opacity: 1;
+    }
+    100% {
+        
+        transform: scale(1);
+        opacity: 1;
+    }
+}
