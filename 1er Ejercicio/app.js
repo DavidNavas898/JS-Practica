@@ -1,7 +1,11 @@
-const boton = document.getElementById("boton-cambio")
-const fondoBody = document.getElementById("fondo")
-const getRandomColor = () => '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+const button = document.querySelector("#boton-cambio")
 
-boton.addEventListener("click",()=>{
-  fondoBody.style.backgroundColor = getRandomColor();  
+button.addEventListener('click',function(){
+
+    const r = Math.floor(Math.random() * 256)
+    const g = Math.floor(Math.random() * 256)
+    const b = Math.floor(Math.random() * 256)
+
+    document.body.style.backgroundColor =  `rgb(${r}, ${g}, ${b})`
+
 })
